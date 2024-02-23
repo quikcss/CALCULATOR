@@ -12,7 +12,7 @@ Array.from(buttons).forEach((button) => {
             string = eval(string)
             string = string.toString()
             if(string.length>15){
-                document.getElementById("h1").style.fontSize = "20px" 
+                document.getElementById("h1").style.fontSize = `${Math.floor(string.length/7)}vw` 
             }
             calcout.textContent = string
         }
